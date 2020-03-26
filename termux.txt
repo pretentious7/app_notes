@@ -1,0 +1,13 @@
+C-b c opens new tmux window
+C-b <arrow key> navigates panes
+C-b n, C-b p goes between windows
+C-b % opens pane sideways
+C-d closes pane
+C-b " splits pane top bottom
+C-b ? is help
+C-b & closes window
+C-b [ opens copy mode
+	-then pressing space starts copying
+	-TODO: get full vim like func here
+	-Enter ends copying
+C-b ] pastes

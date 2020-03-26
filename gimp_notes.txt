@@ -1,0 +1,3 @@
+-Image->Guides, percent guide gives way to snap things to center line.
+-Ctrl-Shift-O opens image as a layer for editing purposes
+:

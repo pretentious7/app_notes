@@ -1,0 +1,30 @@
+Comments in .vimrc are with " (no closing apostrophes)
+when it doesn't seem to be doing anything ctrl-Q exits into insert.
+
+-Window Management:
+	- C-w C-w opens other window
+	- C-w = sets all windows to same size
+	- :split opens new window vertically
+
+-Commenting blocks of code:
+	- C-V goes into visual mode to select block of code
+	- then Shift-I goes into insert
+	- type in commenting character
+	- ESC now copies that onto start of all lines in selection.
+	- to uncomment do selection and press x that deletes vertically.
+-Tabs:
+	- tabedit <filename> opens tab
+	- gt goes front one tab, gT goes back one tab
+-Python:
+	- insert syntax on
+		filetype indent plugin on
+	-in vimrc
+-Custom file extensions syntax highlighting;
+	-put file specific commands to ~/.vim/ftdetect/<filename>.vim file
+-Navigation
+	- C-f jump forward full screen
+	- C-b jump back full screen
+	- C-d jump forward half screen
+	- C-u jump back half screen
+-How to do text wrapping
+

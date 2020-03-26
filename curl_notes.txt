@@ -1,0 +1,4 @@
+ifconfig.co gives ip
+wttr.in gives weather, wttr.in/city gives city weather, wttr.in/airportcode also works
+	wttr.in?m gives weather in celsius
+cheat.sh/application gives cheat sheet for whatever app

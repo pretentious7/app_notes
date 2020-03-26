@@ -1,0 +1,4 @@
+-so samsung phones when mounted as mtp show up in $XDG_RUNTIME_DIR/gvfs
+-by default this is /run/user/$UID/gvfs
+
+-to see pictures tho it must be mounted as a camera in phone settings.

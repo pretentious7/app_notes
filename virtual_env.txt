@@ -1,0 +1,2 @@
+-to create virtualenv <dir>
+-to start go to bin it creates and run source activate.

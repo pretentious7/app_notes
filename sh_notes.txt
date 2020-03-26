@@ -1,0 +1,4 @@
+-eog is image viewer command for eye of gnome
+
+-find:
+	-find *asdf* is decent way to get something in a directory.

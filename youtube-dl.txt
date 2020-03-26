@@ -1,0 +1,2 @@
+-youtube-dl -o - "https://www.youtube.com/watch?v=G4CKmzBf5Cs&t=897s" | vlc -
+	#script that opens videos in vlc for streaming purposes.

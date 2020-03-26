@@ -1,0 +1,28 @@
+Using their info, I found that first researching which ethernet hardware and driver/module I am running, and then removing and reloading that module, did work for me (though it did not for buzhidao):
+
+Wifi:
+
+$ lspci -knn | grep Net -A2
+
+Ethernet:
+
+$ lspci -knn | grep Ether -A2
+
+The second of these (ethernet) was what I used, and I found:
+
+03:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 0c)
+        Subsystem: Hewlett-Packard Company RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [103c:1944]
+        Kernel driver in use: r8169
+        Kernel modules: r8169
+
+so i reloaded the 'r8169' driver:
+
+$ sudo rmmod r8169 && sudo modprobe r8169
+
+and voila! This worked. My ethernet port / connection came back alive (after suspend/wakeup) without having to reboot.
+
+(I also did NOT have a Realtek wifi device, but a Qualcomm Atheros (mod: ath9k) which perhaps explains why wifi continued to work for me after wake-from-suspend.)
+
+
+2. Try turning airplane mode on and off that might fix it. if it does write script.
+

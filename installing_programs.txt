@@ -1,0 +1,5 @@
+for tar.gz files:
+-first gunzip (gunzip <filename>)
+-then untar (tar -xvf <file.tar>)
+OR:
+-untar (tar -xzvf file.tar.gz)
