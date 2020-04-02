@@ -1,0 +1,7 @@
+#makes mounting directory called usb
+sudo mkdir /media/USB
+#mounts drive at /dev/sda to /media/USB, uid=1000 gives root permission to
+#mess around with it.
+sudo mount -t vfat /dev/sda1 /media/USB -o uid=1000
+#to find out where drive is use
+fdisk -l
