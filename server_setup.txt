@@ -1,0 +1,4 @@
+#this gives pids
+ps aux | grep %name
+
+

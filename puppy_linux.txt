@@ -1,0 +1,3 @@
+#iwlwifi some drivers not present in system, to fix:
+copy iwlwifi* from /lib/firmware on working install to /lib/firmware on puppy.
+

@@ -2,3 +2,7 @@
 
 -find:
 	-find *asdf* is decent way to get something in a directory.
+
+-to open something with default program, use xdg-open
+	-xdg-open <name>.pdf will open file using default pdf viewer.
+	-idk what linux dists this works in, but certainly ubuntu.
