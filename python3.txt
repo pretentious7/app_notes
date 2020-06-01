@@ -4,3 +4,5 @@
 #Starts http server on localhost 800 by default
 #put port number after http.server (... http.server <port>) for other ports.
 -python3 -m http.server
+
+-pip3 show <package name> shows where package installed

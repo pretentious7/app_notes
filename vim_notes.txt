@@ -28,3 +28,16 @@ when it doesn't seem to be doing anything ctrl-Q exits into insert.
 	- C-u jump back half screen
 -How to do text wrapping
 
+-Fix indentation in whole file
+	-gg=G
+
+-get last yank
+	- "0p
+
+-Plugins
+	- use vim plug (search for install instructions github)
+-Macros
+	- q<letter> to start recording macro into respective register
+	- q stops recording
+	- play back with @<letter> (not in the prompt)
+	- <num>@<letter> for multiple times

@@ -3,6 +3,7 @@ C-b <arrow key> navigates panes
 C-b n, C-b p goes between windows
 C-b % opens pane sideways
 C-d closes pane
+C-b x also closes pane
 C-b " splits pane top bottom
 C-b ? is help
 C-b & closes window
