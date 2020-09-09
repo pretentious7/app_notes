@@ -1,0 +1,4 @@
+#to start docker on boot 
+sudo systemctl enable docker
+
+

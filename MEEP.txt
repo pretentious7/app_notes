@@ -1,0 +1,12 @@
+
+The source is a gaussian-src instead of a continuous-src, parameterized by a center frequency and a frequency width (the width of the Gaussian spectrum), which we'll define via define-param as usual.
+
+(define-param fcen 0.15) ; pulse center frequency                               
+(define-param df 0.1)    ; pulse width (in frequency)                             
+(set! sources (list
+               (make source
+                 (src (make gaussian-src (frequency fcen) (fwidth df)))
+                 (component Ez)
+                 (center (+ 1 (* -0.5 sx)) wvg-ycen)
+                 (size 0 w))))
+

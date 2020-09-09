@@ -1,0 +1,7 @@
+#set opencl path manually
+cmake -DWITH_CUDA=OFF .. -DCMAKE_BUILD_TYPE=RELEASE -DOpenCL_FOUND=True -DOpenCL_LIBRARY=/system/vendor/lib64/libOpenCL.so
+
+#this works on huawei 7x
+cmake -DWITH_CUDA=OFF .. -DCMAKE_BUILD_TYPE=RELEASE  -DOpenCL_LIBRARY=/system/vendor/lib64/libOpenCL.so -DOpenCL_INCLUDE_DIR=$HOME/OpenCL-Headers/ -DWITH_HTTPD=OFF
+
+ ./ninjarig -a chukwa -o stratum+tcp://turtle.miner.rocks:30132 -u  TRTLv3iJ9pBWVbM8hah4v67k8XmTYy5BaW1DT7sHw4vtE3S6ysRYsLNQfzZ6sg8uMRXoMdZnqGebVWQXy3wgePzhjWZyex7tBz1  -p w=huawei1 -t 6 --use-gpu OPENCL

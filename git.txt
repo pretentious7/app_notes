@@ -1,0 +1,6 @@
+#fork after clone
+- git remote rename origin upstream #so you can keep track of main repo.
+- git remote add origin https://github.com/<your-username>/<your-project>
+- git push -u origin master
+
+

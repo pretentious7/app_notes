@@ -1,0 +1,4 @@
+#to get more repos
+pkg install unstable-repo
+
+cmake -DWITH_CUDA=OFF .. -DCMAKE_BUILD_TYPE=RELEASE  -DOpenCL_LIBRARY=/system/vendor/lib64/libOpenCL.so -DOpenCL_INCLUDE_DIR=$HOME/OpenCL-Headers/

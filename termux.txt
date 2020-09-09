@@ -11,4 +11,5 @@ C-b [ opens copy mode
 	-then pressing space starts copying
 	-TODO: get full vim like func here
 	-Enter ends copying
+	-alt W ends copying, ctrl space to start
 C-b ] pastes

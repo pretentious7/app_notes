@@ -41,3 +41,16 @@ when it doesn't seem to be doing anything ctrl-Q exits into insert.
 	- q stops recording
 	- play back with @<letter> (not in the prompt)
 	- <num>@<letter> for multiple times
+-Folding
+	-set fdm=indent makes folds based on indent
+	-za toggles fold, zc closes, zo opens
+
+-Turn tabs into spaces
+	you can see tabs with first doing this:
+	:set list
+	then to make it possible to replace tabs then do this:
+	:set expandtab
+	then
+	:retab
+	now all tabs have been replaced with spaces you can then go back to normal viewing like this :
+	:set nolist

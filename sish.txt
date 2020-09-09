@@ -1,0 +1,10 @@
+#to make ssh not break while sshing in
+ssh -o ServerAliveInterval=1 jean@sish.aodesign.tech -vp 2500
+
+#to update after changing config
+docker-compose -f docker-compose.yml up -d
+
+#to set up tunnel
+ssh -R 2501:localhost:22 sish.aodesign.tech -p 2222
+
+#use autossh for reliablity
